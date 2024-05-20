@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Heart</title>
+<link rel="stylesheet" href="css/Style.Css">
+</head>
+<body>
+  
+  <div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h2>Selamat datang sayang!</h2>
+    <p>Terima kasih telah mengunjungi situs web ini. by:syahrul</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+<header>
+  
+  <nav class="navbar">
+    <div class="container2">
+   
+      <a href="#" class="logo">Syahrul & Bella</a>
+      
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#history">history</a></li>
+      </ul>
+   
+   
+      <div class="tombol">
+        &#9776;
+      </div>
+   
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="container">
+    <h1>Welcome to our website</h1>
+    <button id="history" class="accordion">History</button>
+    <div class="panel">
+        <p>  "Tidak ada yang bisa mengalahkan momen-momen bahagia yang kita bagi bersama. Setiap cerita, setiap petualangan, menjadi kenangan yang abadi."</p>
+        <div class="gallery">
+            <img src="Foto/Bela2.jpg" alt="Foto 1">
+            <img src="Foto/Bela3.jpg" alt="Foto 2">
+            <img src="Foto/bela4.jpg" alt="Foto 3">
+        </div>
+    </div>
+
+    <button id="about" class="accordion">About us</button>
+    <div class="panel">
+        <p>
+          <b>Syahrul & Bella</b>
+          <p>kami bertemu di awal tahun 2024 , di tanggal 5 januari 2024 , kami janji bertemu di taman lapangan Banteng Jakarta </p>
+          <p>dan sampai detik ini kami masih suka jalan bersama , menjalin hubungan yang menurut saya madu dalam bunga</p>
+        </p>
+    </div>
+
+    <button id="contact" class="accordion">Contact</button>
+    <div class="panel">
+        <p>aku juga bingung bikin contact itu buat apa hahah, aku buat asal aja deh, privasi yegaaa:</p>
+        <ul>
+            <li>Email: bellacantik@selalucantik.com</li>
+            <li>Telepon: +62 123 456 789</li>
+            <li>Alamat: Tambora, Jakarta Selatan</li>
+        </ul>
+        <p>Kami juga aktif di media sosial. Anda dapat mengikuti kami di:</p>
+        <ul>
+            <li>Facebook: [bellacantik]</li>
+            <li>Twitter: @bellagurugb</li>
+            <li>Instagram: [bellapororo]</li>
+        </ul>
+    </div>
+</div>
+</main>
+
+<div class="kata">
+  <h2 class="kata1"> "Bagi dunia, kamu mungkin satu orang, tetapi bagi satu orang kamu adalah dunia."</h2>
+</div>
+
+<div class="slider">
+  <div class="slides">
+      <div class="slide"><img src="Foto/galeri4.jpg" alt="Image 1"></div>
+      <div class="slide"><img src="Foto/galeri1.jpg" alt="Image 2"></div>
+      <div class="slide"><img src="Foto/galeri3.jpg" alt="Image 3"></div>
+      <div class="slide"><img src="Foto/galeri2.jpg" alt="Image 4"></div>
+  </div>
+  <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+  <button class="next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
+<footer>
+  <div class="footer">
+    <p> Hanya untuk mengingat hal hal yang indah</p>
+    <p>&copy; 2024</p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  // deklarasi tombol dan menu
+  const tombol = document.querySelector('.tombol');
+  const menu = document.querySelector('.menu');
+
+  // membuat event click
+  // pada saat tombol di click, tambahkan class aktif pada class menu
+  // saat diklik lagi, maka class aktif dihilangkan dari class menu (toggle)
+  tombol.addEventListener('click', () => {
+    menu.classList.toggle('aktif');
+  });
+</script>
+
+</body>
+</html>

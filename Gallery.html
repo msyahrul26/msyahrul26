@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav-gallery">
+    <div class="logo">
+        <img src="Foto/icon.png" alt="Logo">
+    </div>
+    <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="menu-gallery">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Index.html">About</a></li>
+        <li><a href="Index.html">Contact</a></li>
+        <li><a href="Index.html">History</a></li>
+    </ul>
+</nav>
+
+<div class="container-gallery">
+    <h1 class="text-center mt-5">My Gallery</h1>
+        <p class="kata-kata">Kamu seperti lilin. Keberadaanmu seolah membawa cahaya dalam hidupku.</p>
+    <div class="gallery mt-5">
+        <img src="foto/bela.jpg" alt="Image 1">
+        <img src="foto/bela1.jpg" alt="Image 2">
+        <img src="foto/bela2.jpg" alt="Image 3">
+        <img src="foto/bela3.jpg" alt="Image 4">
+        <img src="foto/bela4.jpg" alt="Image 5">
+        <img src="foto/bela5.jpg" alt="Image 6">
+        <img src="foto/bela6.jpg" alt="Image 7">
+        <img src="foto/bela7.jpg" alt="Image 8">
+        <img src="foto/bela8.jpg" alt="Image 9">
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <p>est2024</p>
+</footer>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menuGallery = document.querySelector('.menu-gallery');
+
+        menuToggle.addEventListener('click', function() {
+            menuGallery.classList.toggle('open');
+        });
+    });
+</script>
+
+</body>
+</html>
